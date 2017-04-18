@@ -48,7 +48,6 @@ nav a {
 figure {
     position: relative;
     left: 10px;
-    display: inline-block;
     margin-left: -10px;
 }
 
@@ -113,6 +112,10 @@ figure {
 #text-b {
     width: 360px;
     float: left;
+}
+
+.show {
+    display: inline-block;
 }
 
 .hide {

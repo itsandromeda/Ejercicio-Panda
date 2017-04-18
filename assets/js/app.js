@@ -33,7 +33,6 @@ function print(alt, src, i) {
 
     img.classList.add("item");
     img.classList.add("black-white");
-    img.setAttribute("id", "img-" + i);
     img.setAttribute("src", src);
     img.setAttribute("alt", alt);
     span.classList.add("delete");
@@ -41,9 +40,11 @@ function print(alt, src, i) {
 
     span.addEventListener('click', function (e) {
         var parentSpan = e.target.parentNode;
-        parentSpan.parentNode.removeChild(parentSpan);
+        parentSpan.setAttribute("class", "hide");
     });
-
+    
+    figure.setAttribute("id", "fig" + i);
+    figure.classList.add("show");
     figure.appendChild(img);
     figure.appendChild(span);
     gallery.appendChild(figure);
@@ -66,4 +67,17 @@ document.getElementById("extincion").addEventListener("click", function () {
 document.getElementById("origen").addEventListener("click", function () {
     "use strict";
     document.getElementById("text-b").classList.toggle("hide");
+});
+
+document.getElementById("print").addEventListener("click", function () {
+    "use strict";
+    var photos = document.getElementsByClassName("show"),
+        i;
+    
+    for (i = 0; i < panda.length; i += 1) {
+        if (document.getElementById("fig" + i).classList.contains("hide")) {
+            document.getElementById("fig" + i).classList.remove("hide");
+            document.getElementById("fig" + i).classList.add("show");
+        }
+    }
 });
