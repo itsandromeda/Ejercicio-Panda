@@ -31,3 +31,42 @@ nav a {
     color: #eac185;
     margin-right: 10px;
 }
+
+
+/*
+  ========================================
+  Gallery
+  ========================================
+*/
+
+#gallery {
+    width: 750px;
+    padding: 5px 0 15px 0;
+    margin: auto;
+}
+
+figure {
+    position: relative;
+    left: 10px;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.item {
+    box-sizing: border-box;
+    height: 145px;
+    border: 5px solid #595959;
+}
+
+.black-white {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.delete {
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 15px;
+    color: #FFF;
+}
