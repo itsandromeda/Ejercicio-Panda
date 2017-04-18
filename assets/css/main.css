@@ -91,3 +91,26 @@ figure {
     border: none;
     cursor: pointer;
 }
+
+
+/*
+  ========================================
+  Text
+  ========================================
+*/
+
+.content {
+    width: 750px;
+    margin: auto;
+    color: #7e764c;
+}
+
+#text-a {
+    width: 360px;
+    float: right;
+}
+
+#text-b {
+    width: 360px;
+    float: left;
+}
