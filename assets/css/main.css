@@ -21,10 +21,9 @@ header {
 }
 
 nav {
-    position: relative;
-    top: 20px;
-    left: 300px;
-    width: 70%;
+    display: inline-block;
+    margin-left: 250px;
+    margin-top: 20px;
 }
 
 nav a {
@@ -40,20 +39,20 @@ nav a {
 */
 
 #gallery {
-    width: 750px;
-    padding: 5px 0 15px 0;
+    width: 850px;
+    padding: 5px 0 20px 0;
     margin: auto;
 }
 
 figure {
     position: relative;
     left: 10px;
-    margin-left: -10px;
+    margin-left: -15px;
 }
 
 .item {
     box-sizing: border-box;
-    height: 145px;
+    height: 155px;
     border: 5px solid #595959;
 }
 
@@ -79,15 +78,16 @@ figure {
 
 .buttons {
     margin: auto;
-    width: 765px;
+    width: 865px;
 }
 
 .display {
     background-color: #ca3c25;
     font-size: 16px;
     color: #FFF;
-    width: 250px;
+    width: 285px;
     border: none;
+    outline-color: #eac185;
     cursor: pointer;
 }
 
@@ -99,18 +99,24 @@ figure {
 */
 
 .content {
-    width: 750px;
-    margin: auto;
+    width: 920px;
+    height: 230px;
+    margin: 20px auto;
     color: #7e764c;
 }
 
-#text-a {
-    width: 360px;
+#text-a,
+#text-b {
+    box-sizing: border-box;
+    width: 460px;
+    padding: 15px;
+}
+
+#text-a {    
     float: right;
 }
 
 #text-b {
-    width: 360px;
     float: left;
 }
 
