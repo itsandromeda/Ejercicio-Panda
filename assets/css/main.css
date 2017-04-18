@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    color: #DDE2B9;
 }
 
 body {
@@ -27,7 +28,6 @@ nav {
 }
 
 nav a {
-    color: #eac185;
     margin-right: 10px;
 }
 
@@ -62,11 +62,11 @@ figure {
 }
 
 .delete {
+    color: #FFF;
     position: absolute;
     z-index: 1;
     left: 15px;
     top: 15px;
-    color: #FFF;
 }
 
 
@@ -84,10 +84,9 @@ figure {
 .display {
     background-color: #ca3c25;
     font-size: 16px;
-    color: #FFF;
     width: 285px;
     border: none;
-    outline-color: #eac185;
+    outline-color: #DDE2B9;
     cursor: pointer;
 }
 
@@ -102,7 +101,6 @@ figure {
     width: 920px;
     height: 230px;
     margin: 20px auto;
-    color: #7e764c;
 }
 
 #text-a,
@@ -112,7 +110,7 @@ figure {
     padding: 15px;
 }
 
-#text-a {    
+#text-a {
     float: right;
 }
 
