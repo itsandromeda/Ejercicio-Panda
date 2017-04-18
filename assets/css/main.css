@@ -1,0 +1,33 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #1d1a05;
+}
+
+
+/*
+  ========================================
+  Navigation bar
+  ========================================
+*/
+
+header {
+    background: #ca3c25;
+    position: relative;
+    height: 60px;
+}
+
+nav {
+    position: relative;
+    top: 20px;
+    left: 300px;
+    width: 70%;
+}
+
+nav a {
+    color: #eac185;
+    margin-right: 10px;
+}
