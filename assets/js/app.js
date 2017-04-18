@@ -57,3 +57,13 @@ window.addEventListener('load', function () {
         print(alt[i], source[i], i);
     }
 });
+
+document.getElementById("extincion").addEventListener("click", function () {
+    "use strict";
+    document.getElementById("text-a").classList.toggle("hide");
+});
+
+document.getElementById("origen").addEventListener("click", function () {
+    "use strict";
+    document.getElementById("text-b").classList.toggle("hide");
+});
