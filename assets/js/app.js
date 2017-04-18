@@ -38,6 +38,12 @@ function print(alt, src, i) {
     img.setAttribute("alt", alt);
     span.classList.add("delete");
     span.appendChild(spanText);
+
+    span.addEventListener('click', function (e) {
+        var parentSpan = e.target.parentNode;
+        parentSpan.parentNode.removeChild(parentSpan);
+    });
+
     figure.appendChild(img);
     figure.appendChild(span);
     gallery.appendChild(figure);
